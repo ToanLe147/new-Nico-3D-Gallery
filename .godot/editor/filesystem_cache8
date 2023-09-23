@@ -1,0 +1,12 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1695415493
+ambulance.tscn::PackedScene::8085960360459945206::1695415267::0::1::::<><>::
+defaultButton.tres::Theme::5669594766475217026::1695415160::0::1::::<><>::uid://bw4lhhckqn87k::::res://assets/interfacePack_32x_packed.png
+icon.svg::CompressedTexture2D::8808980069366430508::1695410780::1695410786::1::::<><>::
+main.tscn::PackedScene::7115775841344858464::1695415371::0::1::::<><>::uid://bpqfc1qopkybg::::res://assets/Sample.png<>uid://cm1nnrp8x6cja::::res://defaultButton.tres<>uid://dng5t6e3or455::::res://ambulance.tscn
+::res://assets/::1695414229
+interfacePack_32x_packed.png::CompressedTexture2D::3991122957304658038::1695412520::1695413679::1::::<><>::
+Preview.png::CompressedTexture2D::7845638925612327915::1695414224::1695414229::1::::<><>::
+Sample.png::CompressedTexture2D::3472591929860721544::1695386970::1695411319::1::::<><>::
+::res://models/::1695414229
+ambulance.glb::PackedScene::9075687299448190200::1695413643::1695413751::1::::<><>::

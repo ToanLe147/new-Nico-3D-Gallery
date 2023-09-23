@@ -1,0 +1,51 @@
+[gd_scene load_steps=5 format=3 uid="uid://c8m612qm8x06w"]
+
+[ext_resource type="Texture2D" uid="uid://bpqfc1qopkybg" path="res://assets/Sample.png" id="1_mmtnr"]
+[ext_resource type="Theme" uid="uid://cm1nnrp8x6cja" path="res://defaultButton.tres" id="2_g4vku"]
+[ext_resource type="PackedScene" uid="uid://dng5t6e3or455" path="res://ambulance.tscn" id="3_c55hh"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_xf64e"]
+viewport_path = NodePath("SubViewport")
+
+[node name="main" type="Node2D"]
+
+[node name="SubViewport" type="SubViewport" parent="."]
+size = Vector2i(800, 400)
+
+[node name="ambulance" parent="SubViewport" instance=ExtResource("3_c55hh")]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(1.39472, 1.39607)
+texture = ExtResource("1_mmtnr")
+stretch_mode = 2
+
+[node name="NextBtn" type="Button" parent="."]
+texture_filter = 1
+offset_left = 171.073
+offset_top = 112.621
+offset_right = 216.073
+offset_bottom = 143.621
+scale = Vector2(4.2594, 2.70943)
+theme = ExtResource("2_g4vku")
+keep_pressed_outside = true
+text = "Next"
+
+[node name="PreviousBtn" type="Button" parent="."]
+texture_filter = 1
+offset_left = 865.289
+offset_top = 117.661
+offset_right = 932.289
+offset_bottom = 148.661
+scale = Vector2(4.2594, 2.70943)
+theme = ExtResource("2_g4vku")
+keep_pressed_outside = true
+text = "Previous"
+
+[node name="3din2dViewport" type="Sprite2D" parent="."]
+position = Vector2(634, 469)
+texture = SubResource("ViewportTexture_xf64e")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(642, 362)
